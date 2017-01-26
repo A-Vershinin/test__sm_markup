@@ -1,0 +1,6 @@
+.page-header {
+  position: relative;
+  @extend %clearfix;
+  background-color: $bg-1;
+  font-size: 0;
+}

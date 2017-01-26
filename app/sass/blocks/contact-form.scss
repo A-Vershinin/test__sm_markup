@@ -1,0 +1,107 @@
+.contact-form {
+}
+.contact-form__block {
+  position: relative;
+  @extend %clearfix;
+  margin-bottom: 31px;
+}
+.contact-form__container {
+  position: relative;
+  float: left;
+  width: 47.5%;
+  margin-left: 5%;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.contact-form__input,
+.contact-form__texarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 31px;
+  padding: 9px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $opensans-regular;
+  font-weight: 400;
+  color: $gray-1;
+  background-color: $bg-1;
+  border-radius: 3px;
+  text-overflow: ellipsis;
+  border: 3px solid transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+.contact-form__texarea {
+  height: 179px;
+  padding: 22px 21px;
+  resize: none;
+}
+.contact-form__btn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding: 13px 59px;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $opensans-regular;
+  font-weight: 400;
+}
+.error {
+  color: $gray-1;
+  border-color: $bg-8;
+  border-width: 3px;
+}
+
+.contact-form__input + label.error {
+  width: 180px;
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  transform: translate(-50%);
+  font: 14px $opensans-regular;
+  padding: 5px 10px;
+  background: $accent;
+  color: $light-1;
+  z-index: 20;
+  white-space: wrap;
+}
+.contact-form__texarea + label.error {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  font: 14px $opensans-regular;
+  padding: 5px 10px;
+  background: $accent;
+  color: $light-1;
+  z-index: 20;
+  white-space: wrap;
+}
+.contact-form__input + .error:after,
+.contact-form__texarea + .error:after {
+  content: '';
+  border-bottom: 7px solid $accent;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  position: absolute;
+  margin-left: -7px;
+  top: -7px;
+  left: 50%;
+}
+@media screen and #{($laptop-point-widths-des)} {
+  .contact-form__input + label.error {
+      width: 142px;
+  }
+}
+@media screen and #{($tablet-point-widths-des)} {
+  .contact-form__texarea + label.error {
+    white-space: nowrap;
+  }
+  .contact-form__texarea + label.error {
+    bottom: 82px
+  }
+  .contact-form__input + label.error {
+      width: 180px;
+  }
+}

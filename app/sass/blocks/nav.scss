@@ -1,0 +1,142 @@
+.nav {
+  max-width: 700px;
+  float: right;
+  @include inline-block($valign: middle);
+  text-align: right;
+  font-size: 16px;
+}
+.nav__burger {
+  display: inline-block;
+  display: none;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 6px solid $accent;
+  width: 40px;
+  transition: border-bottom 1s ease-in-out;
+}
+.nav__burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.nav__burger:before {
+  content: "";
+  display: block;
+  border-bottom: 6px solid $accent;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+.nav__burger:after {
+  content: "";
+  display: block;
+  border-bottom: 6px solid $accent;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+.nav__burger-check {
+  display: none;
+}
+.burger-nav__burger:checked ~ .nav__burger {
+  border-bottom: 6px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+}
+.nav__burger-check:checked ~ .nav__burger:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: transform 0.5s ease-in-out;
+}
+.nav__burger-check:checked ~ .nav__burger:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: transform 0.5s ease-in-out;
+}
+.nav__list {
+  position: relative;
+  transition: max-height 0.5s ease-in-out;
+  z-index: 20;
+}
+ .nav__burger-check:checked ~ .nav__list {
+  max-height: 800px;
+  transition: max-height 0.5s ease-in-out;
+}
+.nav__list {
+  @include ul-reset();
+  font-size: 0;
+}
+.nav__item {
+  @include inline-block($valign: top);
+}
+.nav__link {
+  display: block;
+  padding: 37px 20px;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $opensans-regular;
+  font-weight: 400;
+  text-decoration: none;
+  color: $accent;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+  transition: .4s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  &:hover,&--active  {
+    color: $accent;
+    background-color: $bg-3;
+    border-bottom: 3px solid $accent;
+  }
+  &:active {
+    color: $accent;
+    background-color: $bg-3;
+    border-bottom: 3px solid $accent;
+  }
+}
+@media screen and #{($tablet-point-widths-des)}{
+  .nav__burger {
+    display: inline-block;
+    position: absolute;
+    top: 37px;
+    right: 65px;
+    z-index: 40;
+  }
+  .nav__list {
+    max-height: 0;
+    position: absolute;
+    top: 25px;
+    right: 110px;
+    overflow: hidden;
+    z-index: 70;
+  }
+  .nav__item {
+    display: block;
+    width: 200px;
+    text-align: left;
+    background-color: #555;
+  }
+  .nav__link {
+    padding: 15px 20px;
+  }
+}
+@media screen and #{($phone-point-widths-des)}{
+  .nav {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  .nav__burger {
+    top: 37px;
+    right: 40px;
+  }
+  .nav__list {
+    display: block;
+    width: 96%;
+    top: 100px;
+    left: auto;
+    right: auto;
+  }
+  .nav__item {
+    width: 100%;
+  }
+}

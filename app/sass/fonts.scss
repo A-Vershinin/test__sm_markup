@@ -1,0 +1,40 @@
+
+/* Шрифты */
+/* font-family: "OpenSansRegular"; */
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSansRegular/opensans-regular.woff") format("woff"),
+	url("../fonts/OpenSansRegular/opensans-regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+/* font-family: "OpenSansSemibold"; */
+@font-face {
+	font-family: "OpenSansSemibold";
+	src: url("../fonts/OpenSansSemibold/opensans-semibold.woff") format("woff"),
+	url("../fonts/OpenSansSemibold/opensans-semibold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+/* font-family: "LobsterRegular"; */
+@font-face {
+	font-family: "LobsterRegular";
+	src: url("../fonts/LobsterRegular/lobster-regular.woff") format("woff"),
+	url("../fonts/LobsterRegular/lobster-regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin openSans($style: "regular") {
+	@if ($style == "regular") {
+		font-family: "OpenSansRegular";
+		}
+	@else if($style == "semiBold") {
+		font-family: "OpenSansSemibold";
+	}
+}
+@mixin lobster($style: "regular") {
+	@if ($style == "regular") {
+		font-family: "LobsterRegular";
+	}
+}

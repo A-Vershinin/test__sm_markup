@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Test-small</title>
+  <!-- SEO -->
+  <meta name="description" content="Test-smal">
+  <meta name="keywords" content="Test-smal">
+  <meta name="author" content="Anatoliy Vershinin">
+  <!-- favicon.ico -->
+  <!-- CSS-->
+  <link href="css/libs.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!-- Подключение picturefill в IE -->
+  <script>
+    /*Picture element HTML5 shiv*/
+    document.createElement("picture");
+  </script>
+</head>
+
+
+<body class="no-js">
+  <!-- [inf lt IE 9]
+  <p class="browsehappy">Вы используете <strong>устаревший</strong>
+    браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
+  [endif] -->
+
+  <!-- svg спрайт -->
+  <svg display="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow-next" viewbox="0 0 32 32"><path d="M21.698 15.286l-9.002-8.999a1.014 1.014 0 0 0-1.431 0 1.009 1.009 0 0 0 0 1.428L19.553 16l-8.287 8.285a1.01 1.01 0 0 0 0 1.429 1.014 1.014 0 0 0 1.431 0l9.002-8.999a1.02 1.02 0 0 0-.001-1.429z" fill="#49cbcd"/></symbol>
+    <symbol id="icon-arrow-prev" viewbox="0 0 25 32"><path d="M11.262 16.714l9.002 8.999a1.014 1.014 0 0 0 1.431 0 1.009 1.009 0 0 0 0-1.428L13.407 16l8.287-8.285a1.01 1.01 0 0 0 0-1.429 1.014 1.014 0 0 0-1.431 0l-9.002 8.999a1.02 1.02 0 0 0 .001 1.429z" fill="#49cbcd"/></symbol>
+    <symbol id="icon-fb" viewbox="0 0 32 32"><path d="M16 0C7.163 0 0 7.163 0 16c0 8.836 7.163 16 16 16s16-7.164 16-16c0-8.837-7.163-16-16-16z"/><path d="M13.69 24.903h3.679v-8.904h2.454l.325-3.068h-2.779l.004-1.536c0-.8.076-1.229 1.224-1.229h1.534V7.097h-2.455c-2.949 0-3.986 1.489-3.986 3.992v1.842h-1.838V16h1.838v8.903z" fill="#FFF"/></symbol>
+    <symbol id="icon-gl" viewbox="0 0 48 48"><circle cx="24" cy="24" r="24"/><g fill="#FFF"><path d="M24.8 25.8c-.7-.5-2-1.7-2-2.3 0-.8.2-1.2 1.4-2.2 1.2-1 2.1-2.3 2.1-3.9 0-1.9-.8-3.7-2.4-4.4h2.4l1.7-1.2h-7.5c-3.4 0-6.6 2.6-6.6 5.5 0 3 2.3 5.5 5.7 5.5h.7c-.2.4-.4.9-.4 1.4 0 .8.5 1.5 1 2.1h-1.3c-4.2 0-7.4 2.7-7.4 5.4s3.5 4.4 7.7 4.4c4.8 0 7.4-2.7 7.4-5.4.1-2.1-.5-3.5-2.5-4.9zm-4.1-3.7c-1.9-.1-3.8-2.2-4.1-4.7-.3-2.6 1-4.5 2.9-4.4 1.9.1 3.8 2.1 4.1 4.7.4 2.4-.9 4.4-2.9 4.4zM20 35c-2.9 0-5-1.8-5-4s2.6-4 5.5-3.9c.7 0 1.3.1 1.9.3 1.6 1.1 2.7 1.7 3 3 .1.3.1.5.1.8 0 2-1.5 3.8-5.5 3.8z"/><path d="M32.8 22.3v-2.9h-2.4v2.9h-2.9v2.3h2.9v3h2.4v-3h2.9v-2.3z"/></g></symbol>
+    <symbol id="icon-logo" viewbox="0 0 120 37"><text id="Author" class="cls-1" y="32">Author</text></symbol>
+    <symbol id="icon-plus" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22.5 14H14v8.5a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V14H.5a.5.5 0 0 1-.5-.5v-4A.5.5 0 0 1 .5 9H9V.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5V9h8.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5z"/></symbol>
+    <symbol id="icon-tv" viewbox="0 0 32 32"><path d="M16 0C7.163 0 0 7.163 0 16c0 8.836 7.163 16 16 16s16-7.164 16-16c0-8.837-7.163-16-16-16z"/><path d="M18.226 8.886c-1.59.579-2.595 2.071-2.481 3.704l.038.63-.636-.077c-2.315-.296-4.338-1.299-6.056-2.984l-.84-.836-.215.617c-.458 1.376-.165 2.83.789 3.808.509.54.394.617-.483.296-.305-.103-.573-.18-.598-.141-.089.09.216 1.26.458 1.724.331.644 1.005 1.273 1.743 1.647l.624.296-.739.011c-.712 0-.738.013-.661.284.254.836 1.259 1.724 2.379 2.11l.789.27-.687.412a7.122 7.122 0 0 1-3.41.951c-.573.013-1.044.064-1.044.103 0 .128 1.553.848 2.455 1.132 2.71.836 5.929.475 8.346-.952 1.718-1.016 3.435-3.036 4.237-4.992.433-1.041.865-2.945.865-3.858 0-.592.038-.669.75-1.376.42-.412.814-.862.891-.99.128-.245.114-.245-.534-.026-1.081.386-1.234.335-.699-.244.394-.412.865-1.158.865-1.376 0-.038-.191.026-.407.141-.229.129-.738.322-1.12.437l-.687.219-.623-.426c-.344-.231-.826-.489-1.081-.566-.65-.18-1.642-.154-2.228.052z" fill="#FFF"/></symbol>
+  </svg>
+
+  <div class="wrapper">
+    <!-- HEADER -->
+    <header class="page-header">
+      <div class="container">
+        <div class="logo">
+          <a href="#" class="logo__link" title="Логотип">Author</a>
+        </div>
+        <nav class="nav">
+          <input class="nav__burger-check" id="burger-check" type="checkbox">
+          <label for="burger-check" class="nav__burger"></label>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Service</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Team</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="page-content">
+      <section class="slider">
+        <div class="container">
+          <div class="owl-carousel">
+            <div class="slider__item">
+              <div class="slider__block">
+                <h1 class="slider__title">This is a main heading</h1>
+                <p class="slider__slogan">Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Velit, necessitatibus.</p>
+                <a href="#" class="btn slider__btn">Learn More</a>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__block">
+                <h1 class="slider__title">This is a second heading</h1>
+                <p class="slider__slogan">Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Velit, necessitatibus.</p>
+                <a href="#" class="btn slider__btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="team__title">The Team</h2>
+          <div class="team__cards">
+            <div class="team__card">
+              <div class="team__pict">
+                <picture>
+                  <source media="(max-width: 992px)"
+                    srcset="img/content/pict1.jpg  1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 768px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 480px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <img src="img/content/pict1.jpg" alt="photo">
+                </picture>
+                <div class="team__pict-mask">
+                  <!-- <svg width="42" height="42">
+                    <use xlink:href="img/svg-symbols.svg#icon-plus"></use>
+                  </svg> -->
+                </div>
+              </div>
+              <h3 class="team__name">Adrian Thomas</h3>
+              <div class="team__supname">CEO &amp; Founder</div>
+              <p class="team__text">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Cumque, unde similique fugiat. Numquam,
+                harum, quos.</p>
+            </div>
+            <div class="team__card">
+              <div class="team__pict">
+                <picture>
+                  <source media="(max-width: 992px)"
+                    srcset="img/content/pict1.jpg  1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 768px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 480px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <img src="img/content/pict1.jpg" alt="photo">
+                </picture>
+                <div class="team__pict-mask">
+                  <!-- <svg width="42" height="42">
+                    <use xlink:href="img/svg-symbols.svg#icon-plus"></use>
+                  </svg> -->
+                </div>
+              </div>
+              <h3 class="team__name">Narate Ketram</h3>
+              <div class="team__supname">Creative Director</div>
+              <p class="team__text">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Cumque, unde similique fugiat. Numquam,
+                harum, quos.</p>
+            </div>
+            <div class="team__card">
+              <div class="team__pict">
+                <picture>
+                  <source media="(max-width: 992px)"
+                    srcset="img/content/pict1.jpg  1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 768px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 480px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <img src="img/content/pict1.jpg" alt="photo">
+                </picture>
+                <div class="team__pict-mask">
+                  <!-- <svg width="42" height="42">
+                    <use xlink:href="img/svg-symbols.svg#icon-plus"></use>
+                  </svg> -->
+                </div>
+              </div>
+              <h3 class="team__name">Fernando Comet</h3>
+              <div class="team__supname">CEO &amp; Founder</div>
+              <p class="team__text">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Cumque, unde similique fugiat. Numquam,
+                harum, quos.</p>
+            </div>
+            <div class="team__card">
+              <div class="team__pict">
+                <picture>
+                  <source media="(max-width: 992px)"
+                    srcset="img/content/pict1.jpg  1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 768px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <source media="(max-width: 480px)"
+                    srcset="img/content/pict1.jpg 1x, img/content/pict1.jpg 2x">
+                  <img src="img/content/pict1.jpg" alt="photo">
+                </picture>
+                <div class="team__pict-mask">
+                  <!-- <svg width="42" height="42">
+                    <use xlink:href="img/svg-symbols.svg#icon-plus"></use>
+                  </svg> -->
+                </div>
+              </div>
+              <h3 class="team__name">Adedayo saheed</h3>
+              <div class="team__supname">Creative Director</div>
+              <p class="team__text">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Cumque, unde similique fugiat. Numquam,
+                harum, quos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="prices">
+        <div class="container">
+          <div class="prices__inner">
+          <div class="prices__card">
+            <h4 class="prices__caption">Basic</h4>
+            <div class="prices__supcaption">$5.01/Month</div>
+            <ul class="prices__list">
+              <li class="prices__item">Lorem ipsum.</li>
+              <li class="prices__item">Esse quaerat velit</li>
+              <li class="prices__item">Consectetur adipisicing elit.</li>
+              <li class="prices__item">Asperiores, error!</li>
+              <li class="prices__item">Lorem ipsum dolor sit amet</li>
+              <li class="prices__item">Consectetur adipisicing elit.</li>
+            </ul>
+            <a href="#" class="btn prices__btn">Buy now</a>
+          </div>
+          <div class="prices__card prices__card--active">
+            <h4 class="prices__caption">Pro</h4>
+            <div class="prices__supcaption">$10.01/Month</div>
+            <ul class="prices__list">
+              <li class="prices__item">Lorem ipsum.</li>
+              <li class="prices__item">Esse quaerat velit</li>
+              <li class="prices__item">Consectetur adipisicing elit.</li>
+              <li class="prices__item">Asperiores, error!</li>
+              <li class="prices__item">Lorem ipsum dolor sit amet</li>
+              <li class="prices__item">Consectetur adipisicing elit.</li>
+            </ul>
+            <a href="#" class="btn prices__btn">Buy now</a>
+          </div>
+          <div class="prices__card">
+            <h4 class="prices__caption">Premium</h4>
+            <div class="prices__supcaption">$20.01/Month</div>
+            <ul class="prices__list">
+              <li class="prices__item">Lorem ipsum.</li>
+              <li class="prices__item">Esse quaerat velit</li>
+              <li class="prices__item">Consectetur adipisicing elit.</li>
+              <li class="prices__item">Asperiores, error!</li>
+              <li class="prices__item">Lorem ipsum dolor sit amet</li>
+              <li class="prices__item">Consectetur adipisicing elit.</li>
+            </ul>
+            <a href="#" class="btn prices__btn">Buy now</a>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="container">
+      <h2 class="page-footer__title">Contacts Us</h2>
+      <div class="page-footer__left">
+        <div class="page-footer__slogan">Get in touch with us</div>
+        <div class="page-footer__text">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Voluptatum quis dolorum obcaecati, eum?</div>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--fb" target="_blank">facebook
+              <svg width="42" height="42">
+                <use xlink:href="../img/svg-symbols.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--tv" target="_blank">tvitter
+              <svg width="42" height="42">
+                <use xlink:href="img/svg-symbols.svg#icon-tv"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--gl" target="_blank">google
+              <svg width="42" height="42">
+                <use xlink:href="img/svg-symbols.svg#icon-gl"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__contacts">
+          <div class="page-footer__author">Posted by Dospel&amp;Parker</div>
+          <a href="tel:+XXXXXXXXXXXX" class="page-footer__author-tell">+XX-XXXX-XXXX-XX</a>
+          <a href="mailto:info@gmail.com" class="page-footer__author-mail">info@gmail.com</a>
+        </div>
+      </div>
+      <div class="page-footer__right">
+        <form action="javascript:void(null);" class="contact-form"
+          id="contact-form" method="POST">
+          <div class="contact-form__block">
+            <div class="contact-form__container">
+              <input class="contact-form__input" type="text"
+                name="name" id="name-field" placeholder="Name">
+            </div>
+            <div class="contact-form__container">
+              <input class="contact-form__input" type="email"
+                name="email" id="email-field" placeholder="Email">
+            </div>
+            <textarea class="contact-form__texarea" name="message" placeholder="Message"
+              id="message-field"></textarea>
+            <button class="btn contact-form__btn" type="submit" id="success">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end container -->
+  </footer>
+
+  <div class="modal"></div>
+
+  <!-- Query -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- Plugins Query.js -->
+
+  <!--  libs.js -->
+  <script src="js/libs.min.js"></script>
+  <!-- custom scripts.js -->
+  <script src="js/common.js"></script>
+
+</body>
+</html>

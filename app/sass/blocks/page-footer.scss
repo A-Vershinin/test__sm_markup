@@ -1,0 +1,134 @@
+.container {
+  @include container-fluid();
+}
+.page-footer {
+  position: relative;
+  @extend %clearfix;
+  color: $light-1;
+  background-color: $bg-5;
+  min-height: 687px;
+  @include cover();
+  z-index: 30;
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $bg-5;
+    background-image: url("../img/bg/bg2@1x.jpg");
+    @include cover();
+    opacity: .28;
+    z-index: -1;
+    @media #{$retina} {
+      background-image: url("../img/bg/bg2@2x.jpg");
+    }
+  }
+}
+.page-footer__left {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.page-footer__right {
+  float: right;
+  width: 47.5%;
+  margin-left: 2.5%;
+
+}
+.page-footer__title {
+  padding: 0 20px;
+  padding-top: 100px;
+  padding-bottom: 105px;
+  color: $light-1;
+  font-size: 42px;
+  line-height: 48px;
+  font-family: $opensans-regular;
+  text-align: center;
+}
+.page-footer__slogan {
+  margin-bottom: 17px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.page-footer__text {
+  margin-bottom: 40px;
+  padding-right: 30%;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.5;
+}
+.page-footer__contacts {
+  max-width: 50%;
+  color: $light-4;
+  font-size: 14px;
+  line-height: 24px;
+}
+.page-footer__author {
+  margin-bottom: 3px;
+}
+.page-footer__author-tell,
+.page-footer__author-mail {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: $opensans-regular;
+  text-decoration: none;
+  color: $light-4;
+}
+@media screen and #{($laptop-point-widths-des)} {
+  .page-footer {
+    min-height: 554px;
+  }
+  .page-footer__title {
+    padding: 70px 20px;
+  }
+  .contact-form__btn {
+    padding: 13px 59px;
+  }
+}
+@media screen and #{($tablet-point-widths-des)} {
+  .page-footer__title {
+    padding: 50px 20px;
+  }
+  .page-footer__right,
+  .page-footer__left {
+    float: none;
+    width: 100%;
+  }
+  .page-footer__left {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .page-footer__text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .page-footer__contacts {
+    max-width: 100%;
+  }
+  .page-footer__right {
+    margin-left: 0;
+  }
+  .contact-form__block {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+  .contact-form__btn {
+    margin: 0 auto;
+    padding: 10px 59px;
+  }
+}
+@media screen and #{($phone-point-widths-des)} {
+  .contact-form__container {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .contact-form__btn {
+    padding: 10px 40px;
+  }
+}
